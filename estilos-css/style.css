@@ -152,7 +152,7 @@ form div {
     }
     .titulo{
         grid-area:titulo;
-        max-width: 70%;
+        width: 100%;
         height: auto;
     }
     #mainIndex{
