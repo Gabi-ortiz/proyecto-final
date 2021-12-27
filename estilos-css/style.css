@@ -13,23 +13,25 @@
     align-items: center;
     font-family: 'Kalam', cursive;
     text-transform: uppercase;
-    width: 100%;
-    height: auto;
 }    
 
-ul.menu{
+.menu{
     display: flex;
     justify-content: right;
-    list-style: none;
+    
     
 }    
+nav ul {
+    list-style: none;
+    display: contents;
+}
 
-ul.menu li a{
+ul li a{
     text-decoration: none;
     color: white;
     padding: 5px;
 }
-ul.menu li a:hover{
+ul li a:hover{
     background-color: grey;
 }
 .titulo{
@@ -40,8 +42,8 @@ ul.menu li a:hover{
 
 /*menu*/
 
-/*section index*/
-#sectionIndex {
+/*main index*/
+#mainIndex {
     display: grid;
     grid-template-columns: 49% 49%;
     gap: 2%;
@@ -49,20 +51,19 @@ ul.menu li a:hover{
     width: 100%;
     height: auto;
 }
-main img.imagenIndex{
+section img.imagenIndex{
     width: 100%;
     height: auto;
 }
 
-/*section index*/
+/*main index*/
 
 /*Footer*/
-#footer p {
+#footer {
     display: flex;
     justify-content: center;
     font-size:x-large;
     background-color: gray;
-    padding: 10px;
     margin-top: 50px;
 }
 /*Footer*/
@@ -144,19 +145,17 @@ form div {
         "menu menu"
         ;
     }
-    .menu{
+    .menu {
         grid-area: menu;
-    }
-    ul.menu{
-        display: inline-flex;
-        
+        width: 100%;
+        height: auto;
     }
     .titulo{
         grid-area:titulo;
         max-width: 70%;
         height: auto;
     }
-    #sectionIndex{
+    #mainIndex{
         display: flex;
         flex-direction: column;
     }
